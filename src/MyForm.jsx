@@ -6,7 +6,7 @@ export default function MyForm({ readData }) {
     // Read the form data
     const form = e.target
     const formData = new FormData(form)
-
+    // comment
     // You can pass formData as a fetch body directly:
     const formJson = Object.fromEntries(formData.entries())
     fetch('http://localhost:3000/info', {
