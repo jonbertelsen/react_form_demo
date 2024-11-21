@@ -5,7 +5,7 @@ function DemoList({ demoData = [] }) {
       {JSON.stringify(demoData)}
 
       {demoData.map((demo) => (
-        <ul>
+        <ul key={demo.id}>
           <li>id: {demo.id}</li>
           <li>myInput: {demo.myInput}</li>
           <li>Checkbox: {demo.myCheckbox == 'on' ? 'Checked' : 'Unchecked'}</li>
